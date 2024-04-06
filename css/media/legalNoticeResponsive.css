@@ -1,0 +1,10 @@
+@media(max-width: 800px) {
+    .policy-area {
+        width: 100%;
+    }
+
+    .all-policy {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}

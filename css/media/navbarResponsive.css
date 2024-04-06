@@ -1,0 +1,31 @@
+
+@media(max-width: 153px) {
+    #impressum a {
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 800px) {
+    #container1,
+    .container {
+        display: none;
+    }
+
+    #responsive-navigation {
+        display: flex;
+    }
+
+    .mobile-navbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #2A3647;
+        display: flex;
+        justify-content: space-around;
+        z-index: 1002;
+    }
+}
+

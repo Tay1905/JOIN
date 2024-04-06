@@ -1,0 +1,238 @@
+.summary-area{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 247, 248);
+    min-height: 110vh;
+    width: 85%;
+    position: absolute;
+    right: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #091931;
+    border-radius: 10px;
+  }
+
+h1{
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 73.2px */
+}
+
+.headline-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.headline-container image{
+    width: 0px;
+    height: 59px;
+}
+
+.headline-container span{
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 32.4px */
+}
+
+.summary-wo-hedline{
+    margin-left: 120px;
+}
+
+.taskVison-greets-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.taskVison{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.vision-task{
+    width: 264px;
+    display: flex;
+    padding: 38px 19px;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    border-radius: 30px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.vision-task:hover {
+    cursor: pointer;
+    background-color: #2A3647;
+    color: #FFF;
+}
+
+.vision-task:hover .task-counter,
+.vision-task:hover .task-status,
+.vision-task:hover .deadline,
+.vision-task:hover .deadline-text,
+.vision-task-processing:hover .task-counter,
+.vision-task-processing:hover .task-status {
+  color: white;
+}
+
+.task-img{
+    width: 69px;
+    height: 69px;
+}
+
+.start-finish-task-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.task-counter-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-counter{
+    color: #000;
+    text-align: center;
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 76.8px */
+}
+
+.task-status{
+    color: #2A3647;
+    /* Version 2/t6 */
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+}
+
+.urgent-deadline-task-container{
+    display: flex;
+    width: 560px;
+    padding: 28px 48px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 61px;
+}
+
+.urgent-vision-task{
+    display: flex;
+    padding: 38px 19px;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+#deadline-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.deadline{
+    color: #2A3647;
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.deadline-text{
+    color: #2A3647;
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+
+.processing-task-container{
+    display: flex;
+    padding: 1px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.vision-task-processing{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 30px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10); 
+}
+
+.vision-task-processing:hover{
+    cursor: pointer;
+    background-color: #2A3647;
+    color: #FFF;
+}
+
+.text-center{
+    text-align: center; 
+}
+
+.greets{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+    margin-left: 5%;
+}
+
+.greet-time{
+    color: #2A3647;
+/* Version 2/t2 */
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 56.4px */
+}
+
+.greet-account{
+    color: var(--Ligth-blue, #29ABE2);
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 76.8px */
+}

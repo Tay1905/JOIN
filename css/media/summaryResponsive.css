@@ -1,0 +1,225 @@
+@media(max-width: 1325px) {
+    .taskVison-greets-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .taskVison-greets-container {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .greets {
+        margin-bottom: 50px;
+    }
+
+    .summary-wo-hedline {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .taskVison {
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 800px) {
+    body {
+        animation-name: scrollbehavior;
+        animation-duration: 3s;
+    }
+
+    .summary-area {
+        width: 100%;
+        animation-name: opacity;
+        animation-delay: 6s;
+    }
+
+    .taskVison {
+        margin-bottom: 80px;
+    }
+
+    .greet-account {
+        font-size: 48px;
+    }
+
+    .greets {
+        background-color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        position: fixed;
+        top: 90px;
+        right: 0;
+        left: -40px;
+        bottom: 27px;
+
+        animation-name: fadeOut;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+            visibility: hidden;
+            overflow-y: scroll;
+        }
+    }
+
+    @keyframes scrollbehavior {
+        from {
+            overflow: hidden;
+        }
+
+        to {
+            overflow-y: scroll;
+        }
+    }
+
+    @keyframes opacity {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+
+@media(max-width: 700px) {
+    .vision-task {
+        padding: 38px 0;
+        width: 190px;
+    }
+
+    .start-finish-task-container {
+        gap: 20px;
+    }
+
+    .urgent-deadline-task-container {
+        width: 400px;
+        gap: 20px;
+    }
+
+    .processing-task-container {
+        gap: 15px;
+    }
+
+    .vision-task-processing {
+        width: 125px;
+        height: 125px;
+    }
+
+    .task-counter {
+        font-size: 45px;
+    }
+
+    .headline-container {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .headline-container img {
+        transform: rotate(90deg);
+        padding-left: 57px;
+        margin-top: -50px;
+    }
+
+    .headline-container h1 {
+        margin: 0;
+    }
+}
+
+@media(max-width: 450px) {
+    .vision-task {
+        padding: 25px 0;
+        width: 160px;
+    }
+
+    .urgent-deadline-task-container {
+        width: 340px;
+        gap: 20px;
+    }
+
+    .vision-task-processing {
+        width: 105px;
+        height: 105px;
+        gap: 0;
+    }
+
+    .task-counter {
+        font-size: 43px;
+    }
+
+    .task-status {
+        font-size: 18px;
+    }
+
+    .headline-container {
+        margin: 30px;
+        align-items: center;
+    }
+
+    .headline-container h1 {
+        font-size: 58px;
+    }
+
+    .headline-container span {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .start-finish-task-container {
+        flex-direction: column;
+    }
+
+    .vision-task {
+        width: 290px;
+    }
+
+    .urgent-deadline-task-container {
+        flex-direction: column;
+    }
+
+    .seperator-urgent-task {
+        transform: rotate(90deg);
+        margin-top: -30px;
+    }
+
+    .processing-task-container {
+        flex-direction: column;
+    }
+
+    .vision-task-processing {
+        width: 290px;
+        height: 120px;
+        margin-bottom: 25px;
+    }
+
+    #deadline-container {
+        display: block;
+        text-align: center;
+    }
+
+    .greet-time {
+        margin-left: 20px;
+    }
+}

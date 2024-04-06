@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join-Board</title>
+    <link rel="icon" type="image/gif" href="../img/join-logo.png">
+    <link rel="stylesheet" href="../css/styleAddTask.css">
+    <link rel="stylesheet" href="../css/addTaskPopup.css">
+    <link rel="stylesheet" href="../css/styleBoard.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/naviagtion-template.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/media/addTaskResponsive.css">
+    <link rel="stylesheet" href="../css/media/navbarResponsive.css">
+    <link rel="stylesheet" href="../css/media/boardResponsive.css">
+
+    <script src="../js/header.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/addTaskPopup.js"></script>
+    <script src="../js/addTask.js"></script>
+    <script src="../js/board.js"></script>
+
+</head>
+
+<body id="body" onload="initBoard()">
+    <div class="container" id="container1">
+        <iframe src="../html/navigation-template.html" width="250px" height="100%" frameborder="0"></iframe>
+    </div>
+        <div class="board-area">
+            <div>
+                <div w3-include-html="../html/header.html"></div>
+            </div>
+            <div id="header-initials-menu-container"></div>            
+            <div class="create-task-area">
+                <div class="h1-serach-add-container">
+                    <h1>Board</h1>
+                    <div class="find-add-task">
+                        <div class="input-btn-container">
+                            <input oninput="searchTask()" id="searchTaskInput" placeholder="Find Task" type="text">
+                            <img class="vector-svg" src="../img/Vector 3.svg" alt="vector">
+                            <button onclick="searchTask()" id="inputBtn" class="input-btn"><img src="../img/search.svg" alt=""></button>
+                        </div>
+                        <div onclick="openAddTaskPopup()"><button id="btnAddTask">
+                            <div class="btnAddTask-text">Add task</div> <img src="../img/add.svg" alt="plus">
+                        </button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="task-card-area">
+                <div class="task-cards">
+                    <div class="drop-area" ondrop="moveTo('To do')" ondragover="allowDrop(event)">
+                        <div class="task-status">To Do<button onmouseleave="imgChangeBack('ToDoAdd')"
+                            onmouseenter="imgChange('ToDoAdd')" class="task-btn" onclick="openAddTaskPopup('To do')"><img id='ToDoAdd' src="/img/Capa 1.svg" alt="plus"></button>
+                        </div>
+                        <div id="To do" class="task-card-row"></div>
+                    </div>
+                    <div class="drop-area" ondrop="moveTo('In progress')" ondragover="allowDrop(event)">
+                        <div class="task-status">In progress<button onmouseleave="imgChangeBack('InProgressAdd')"
+                            onmouseenter="imgChange('InProgressAdd')" class="task-btn" onclick="openAddTaskPopup('In progress')"><img id='InProgressAdd' src="/img/Capa 1.svg" alt="plus"></button>
+                        </div>
+                        <div id="In progress" class="task-card-row"></div>
+                    </div>
+                    <div  class="drop-area" ondrop="moveTo('Await feedback')" ondragover="allowDrop(event)">
+                        <div class="task-status">Await feedback<button onmouseleave="imgChangeBack('AwaitFeedbackAdd')"
+                            onmouseenter="imgChange('AwaitFeedbackAdd')" class="task-btn" onclick="openAddTaskPopup('Await feedback')"><img id='AwaitFeedbackAdd' src="/img/Capa 1.svg" alt="plus"></button>
+                        </div>
+                        <div id="Await feedback" class="task-card-row"></div>
+                    </div>
+                    <div class="drop-area done" ondrop="moveTo('Done')" ondragover="allowDrop(event)">
+                        <div class="task-status">Done</div>
+                        <div id="Done" class="task-card-row"></div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="detail-task-container">
+            <div id="detailTask"></div>
+        </div>
+
+        <div  id="responsive-navigation" class="mobile-navbar">
+            <a class="responsive-navigation-link" href="../html/summary.html"><img src="../JoinTayfun/responsive-img/Summary-responsive.png" alt=""></a>
+            <a class="responsive-navigation-link" href="../html/board.html"><img src="../JoinTayfun/responsive-img/menuButton-responive.png" alt=""></a>
+            <a class="responsive-navigation-link" href="../html/addTask.html"><img src="../JoinTayfun/responsive-img/add task-responsive.png" alt=""></a>
+            <a class="responsive-navigation-link" href="../JoinTayfun/Join-Contacts.html"><img src="../JoinTayfun/responsive-img/contact-responsive.png" alt=""></a>
+        </div>
+
+    <div class="popup d-none" id="popup">
+        
+    </div>
+    <script>
+        document.getElementById('searchTaskInput').addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                searchTask();
+            }
+        });
+    </script>
+</body>
+
+</html>

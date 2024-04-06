@@ -1,0 +1,89 @@
+@media(max-width: 1000px) {
+    .signup-container {
+        position: relative;
+        width: 100%;
+        top: 60px;
+        right: 0;
+    }
+
+    .join-logo {
+        position: absolute;
+        top: 48px;
+        left: 48px;
+    }
+    
+    .login-maincontainer {  
+        margin-top: 70px;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+    .login-subcontainer {
+        padding: 36px 215px;
+    }
+
+    .login-page-main-container {
+        height: 100%;
+    }
+
+    .inputfields-login-container {
+        align-items: center;
+        width: 100%;
+    }
+
+    .btns-login {
+        flex-direction: column;
+        margin-top: -35px;
+    }
+
+    footer {
+        margin-top: 130px;
+        padding-bottom: 30px; 
+    }
+}   
+
+@media(max-width: 745px) {
+    .login-subcontainer {
+        padding: 36px 115px;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .inputfields-login-container {
+        align-items: center;
+        width: 350px;
+    }
+
+    .inputfield-login {
+        width: 85%;
+    }
+    
+
+    .login-subcontainer {
+        width: 350px;
+        padding: 36px 15px;
+    }
+}
+
+@media(max-width: 450px) {
+    .inputfields-login-container {
+        align-items: center;
+        width: 300px;
+    }
+
+    .login-subcontainer {
+        width: 300px;
+    }
+}
+
+@media(max-width: 400px) {
+    .inputfields-login-container {
+        align-items: center;
+        width: 300px;
+    }
+
+    .login-subcontainer {
+        width: 300px;
+    }
+}

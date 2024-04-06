@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/media/headerResponsive.css">
+
+
+    <title>Document</title>
+</head>
+
+<body onload="initHeader()">
+
+
+    <div class="free-space-container">
+        <img class="join-logo-responsive" src="../img/join-logo.png" alt="">
+        <span class="kanban">Kanban Project Management Tool</span>
+        <div class="free-space-help">
+            <a href="help.html" class="help-sign"><img src="../img/help.png" alt=""></a>
+            <div class="header-initials" id="header-initials" onclick="openInitialMenu()"></div>
+        </div>
+    </div>
+    <div class="header-initials-menu d-none" id="header-initials-menu">
+        <a href="../html/policy.html">Privacy Policy</a>
+        <a href="../html/impressum.html">Legal Notice</a>
+        <a href="../html/login.html">Logout</a>
+    </div>
+
+    <script src="../js/login.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/contacts.js"></script>
+    <script src="../js/summary.js"></script>
+    <script src="../js/addTask.js"></script>
+    <script src="../js/header.js"></script>
+
+</body>
+
+</html>

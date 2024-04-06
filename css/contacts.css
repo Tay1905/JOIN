@@ -1,0 +1,602 @@
+body {
+    max-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.contacts-maincontainer {
+    display: flex;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #091931;
+    border-radius: 10px;
+  }
+
+.main-section {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    width: 85%;
+}
+
+.contacts-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container2 {
+    max-height: 88vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+
+#addContact-button {
+    background-color: rgb(42, 54, 71);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 352px;
+    height: 56px;
+    border-radius: 10px;
+    font-size: 21px;
+    gap: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#addContact-button:hover {
+    background-color: #29ABE2;
+    ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contactList {
+    display: flex;
+    justify-content: center;
+
+ }
+
+.list-of-contacts {
+    height: 944px;
+    overflow-y: auto;
+    /* Dies fügt einen vertikalen Scrollbalken hinzu, wenn der Inhalt über die Höhe des Containers hinausgeht */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-list-mail {
+    color: blue;
+}
+
+.list-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 24px;
+    height: 78px;
+    width: 375px;
+    gap: 35px;
+    margin-top: 6px;
+}
+
+.list-row:hover {
+    background-color: rgb(42, 54, 71);
+    color: white;
+    border-radius: 10px;
+}
+
+.list-row:hover .contact-list-mail {
+    color: white;
+}
+
+.list-row-contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+}
+
+.list-row-contactInfo span {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.list-row-contactInfo a {
+    text-decoration: none;
+    width: auto;
+}
+
+.initials {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    height: 58px;
+    padding-left: 38px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+#container3 {
+    padding-top: 100px;
+    max-height: 88vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 5rem;
+    background-color: #F6F7F8;
+}
+
+.content-headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    gap: 1rem;
+    height: 76px;
+    margin-bottom: 30px;
+}
+
+.contact-contant {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    position: relative;
+
+    animation-name: slide;
+    animation-duration: 750ms;
+}
+
+@keyframes slide {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0%;
+    }
+    
+}
+
+.show {
+    transform: translateX(0);
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.contact-contant-headline {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+}
+
+.contact-contant-headline span {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.EditInitials {
+    border-radius: 80px;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Hinzugefügte Schatten-Eigenschaft */
+    color: white;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+
+.contact-contant-headline h1 {
+    border-radius: 80px;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Hinzugefügte Schatten-Eigenschaft */
+    color: white;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+
+
+.contact-contant-headline2 span {
+    font-size: 47px;
+    text-align: center;
+}
+
+.contact-contant-headline-buttons {
+    margin-top: 12px;
+    height: 24px;
+    width: 159px;
+    display: flex;
+    gap: 13px;
+    transition: transform 0.2s, color 0.2s;
+
+}
+
+.contact-contant-headline-buttons a:hover {
+    transform: scale(1.1);
+    /* Vergrößert das Element um 10% */
+    color: #FF6347;
+    /* Ändert die Textfarbe im Hover-Zustand (Korallenrot) */
+}
+
+iframe {
+    border: none;
+    /* Entfernt die Rahmen */
+    width: 100%;
+}
+
+#font-size {
+    width: 235px;
+    font-size: 27px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.up-line {
+    border: 1px solid #29ABE2;
+
+    height: 70px;
+}
+
+
+#container1 {
+    background-color: rgb(42, 54, 71);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+    padding-top: 64px;
+}
+
+#container1 img {
+    height: 121.97px;
+    width: 100.03px;
+    margin: 0 auto;
+}
+
+#numberForm {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+.d-none {
+    display: none;
+}
+
+#editForm {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+.editForm {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 422px;
+    height: 215px;
+    top: 137px;
+    left: 742px;
+    gap: 32px;
+
+}
+
+.scroll-container {
+    width: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scrollbar {
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.scrollbar-thumb {
+    background-color: #666;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 20px;
+}
+
+
+
+
+EditForm body {
+    margin: 0;
+}
+
+.darkArea img {
+    border-radius: 20px 0 0 20px;
+    height: 594px;
+    gap: 12px;
+    width: 453px;
+    padding: 66px, 46px, 66px, 46px;
+}
+
+#myForm{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 422px;
+    height: 215px;
+    top: 137px;
+    left: 742px;
+    gap: 32px;
+    /* margin-top: 71px; */
+
+}
+
+.contact-initials {
+    width: 120px;
+    height: 120px;
+    top: 204px;
+    left: 550px;
+    border: 3px;
+    gap: 10px;
+}
+
+input {
+    border: none;
+    outline: none;
+    cursor: text;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    font-size: 24px;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+.contact-Form {
+    display: flex;
+    align-items: center;
+    gap: 68px;
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgb(255, 254, 254);
+    top: 10%;
+    left: 2%;
+    z-index: 1000;
+}
+
+.form-and-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.inputEmail {
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.inputEmail img {
+    height: 21px;
+    width: 21px;
+    aspect-ratio: 1/1;
+}
+
+.button-flex {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 57px;
+    width: 364px;
+    position: relative;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+.button-flex button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.x-button {
+    position: absolute;
+    top: 48px;
+    right: 18px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#x-button {
+    padding: 7px;
+    cursor: pointer;
+    color: black !important;
+
+}
+
+#x-button:hover {
+    background-color: rgba(75, 80, 80, 0.13);
+    border-radius: 18px;
+}
+
+.mail-to-contact {
+    justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: #29ABE2;
+}
+
+button {
+    height: 3rem;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#add-button {
+    background-color: rgb(42, 54, 71);
+    color: white;
+    width: 214px;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+#add-button:hover {
+    background-color: #29ABE2;
+
+}
+
+#create-button {
+    background-color: rgb(42, 54, 71);
+    color: white;
+}
+
+button:hover {
+    border: 1px solid #29ABE2;
+    color: #29ABE2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#create-button:hover {
+    background-color: #29ABE2;
+    color: rgb(255, 255, 255);
+    border: 0;
+}
+
+.contant-contact-email {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 42px;
+}
+
+.contant-contact-email span {
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+.contant-contact-email a {
+    color: #29ABE2;
+}
+
+.contant-contact-information {
+    height: 78px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.contant-contact-information span {
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.person-initials {
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 1px;
+    font-size: 12px;
+}
+
+.succes-button {
+    background-color: #2A3647;
+    width: 326px;
+    height: 74px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: 946px;
+    position: absolute;
+    display: flex;
+    left: 880px;
+
+}
+
+.current-link {
+    background-color: #FF6347;
+}
+
+.showContact-headline {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.currentContact{
+    background-color: rgb(42, 54, 71);
+    color: white;
+    border-radius: 10px;
+}
+
+.currentContactLink{
+color: white;
+}

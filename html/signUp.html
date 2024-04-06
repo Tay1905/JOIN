@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="../img/join-logo.png">
+    <link rel="stylesheet" href="../css/styleAddTask.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <link rel="stylesheet" href="../css/media/signUpReseponsive.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script src="../js/login.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/board.js"></script>
+    <script src="../js/register.js"></script>
+
+
+
+    <title>Sign up</title>
+</head>
+
+<body onload="createmsg(); init()">
+
+    <div class="animation-maincontainer-signup d-none" id="signup-success-animation">
+        <div class="animation-div-signup-success" >
+            You Signed Up Successfully
+        </div>
+    </div>
+
+    <div class="signup-page-main-container">
+        <div class="logo-line">
+            <img src="../img/join-logo.png" alt="logo" class="join-logo">
+        </div>
+
+        <div class="signup-maincontainer">
+            <div class="signup-subcontainer">
+                <span class="headline-signup"><a href="../html/login.html"><img src="../img/arrow-left-line.png"
+                            alt=""></a>Sign up</span>
+                <div class="seperator-container">
+                    <div class="seperator-signup"></div>
+                </div>
+                <form onsubmit="return false;">
+                    <div class="inputfields-signup-container">
+                        <input class="inputfield-signup" id="fullname-input" type="text"  onkeyup="checkInputsSignUp()"
+                            placeholder="Vor- und Nachname" maxlength="30" autofocus>
+                            <div id="warningtxt-fullname" class="warningTxt-container"></div>
+                        <input class="inputfield-signup" id="email" type="text" onkeyup="checkInputsSignUp()" placeholder="Email"
+                            maxlength="30" autofocus>
+                        <div id="warningTxt-email" class="warningTxt-container"></div>
+                        <input class="inputfield-signup" id="password" type="password" placeholder="Password"
+                            maxlength="30" onkeyup="checkConfirmedPassword(); bgImgEye()" onclick="changeEye()">
+                        <div class="warningtxt-pswd"></div>
+                        <input class="inputfield-signup" id="confirm-password" type="password"
+                            placeholder="Confirm Password" maxlength="30"
+                            onkeyup="checkConfirmedPassword(); bgImgEyeConfirm()" onclick="changeEyeConfirm()">
+                        <div class="warning-txt-confirm-password" id="warning-txt-confirm-password"></div>
+
+                    </div>
+                    <div class="accept-policy-line">
+                        <div class="accept">
+                            <img src="../img/checkbox.png" class="check-btn-signup" id="checkbox" alt="Check button"
+                                onclick="addDoneSignToSquare()">
+                            <span>I accept the</span>
+                        </div>
+                        <a href="../html/policy.html" class="privacy-policy">Privacy policy</a>
+                    </div>
+                    <div class="btns-signup">
+                        <button class="btn disabled" id="signupBtn" onclick="registerValues()" disabled>Sign up</button>
+                    </div>
+            </div>
+            </form>
+        </div>
+
+        <footer>
+            <a href="../html/policy.html" target="_blank">Privacy Policy</a>
+            <a href="../html/impressum.html" target="_blank">Legal notice</a>
+        </footer>
+
+    </div>
+
+  
+
+</body>
+
+</html>

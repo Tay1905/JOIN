@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="icon" type="image/gif" href="../img/join-logo.png">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/naviagtion-template.css">
+    <link rel="stylesheet" href="../css/styleSummary.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/media/navbarResponsive.css">
+    <link rel="stylesheet" href="../css/media/summaryResponsive.css">
+
+    <script src="../js/header.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/board.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/addTask.js"></script>
+    <script src="../js/summary.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="container" id="container1">
+        <iframe src="../html/navigation-template.html" width="250px" height="100%" frameborder="0"></iframe>
+    </div>
+
+    <div class="summary-area">
+        <div>
+            <div w3-include-html="../html/header.html"></div>
+        </div>
+        <div class="summary-wo-hedline">
+            
+            <div class="headline-container">
+                <div>
+                    <h1>Join 360</h1>
+                </div>
+                <div><img src="../img/Vector 5.svg" alt=""></div>
+                <div><span>Key Metrics at a Glance</span></div>
+            </div>
+            <div class="taskVison-greets-container">
+                <div class="taskVison">
+                    <div class="start-finish-task-container">
+                        <a onmouseenter="imgChangeSummary('toDo-vision')" onmouseleave="imgChangeSummaryBack('toDo-vision')" href="/html/board.html"><div class="vision-task" id="toDo-vision"></div></a>
+                        <a onmouseenter="imgChangeSummary('done-vision')" onmouseleave="imgChangeSummaryBack('done-vision')" href="/html/board.html"><div class="vision-task" id="done-vision"></div></a>
+                    </div>
+                    <a href="../html/board.html">
+                        <div class="vision-task urgent-deadline-task-container">
+                            <div class="urgent-vision-task" id="urgent-vision"></div>
+                            <div><img class="seperator-urgent-task" src="../img/VectorUrgent.svg" alt=""></div>
+                            <div id="deadline-container"></div>
+                        </div>
+                    </a>
+                    <div class="processing-task-container">
+                        <a href="../html/board.html"><div id="allTasks-vision" class="vision-task-processing"></div></a>
+                        <a href="../html/board.html"><div id="InProgressTasks-vision" class="vision-task-processing"></div></a>
+                        <a href="../html/board.html"><div id="AwaitFeedbackTasks-vision" class="vision-task-processing"></div></a>
+                    </div>
+                </div>
+                <div class="greets">
+                    <div id="greet"></div>
+                    <div id="account"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div  id="responsive-navigation" class="mobile-navbar">
+        <a href="../html/summary.html"><img src="../JoinTayfun/responsive-img/Summary-responsive.png" alt=""></a>
+        <a href="../html/board.html"><img src="../JoinTayfun/responsive-img/menuButton-responive.png" alt=""></a>
+        <a href="../html/addTask.html"><img src="../JoinTayfun/responsive-img/add task-responsive.png" alt=""></a>
+        <a href="../html/contacts.html"><img src="../JoinTayfun/responsive-img/contact-responsive.png" alt=""></a>
+    </div>
+
+</body>
+
+</html>

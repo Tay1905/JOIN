@@ -1,0 +1,139 @@
+.policy-area{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 247, 248);
+    min-height: 110vh;
+    width: 85%;
+    position: absolute;
+    right: 0;
+    
+}
+
+.all-policy{
+    margin-left: 120px;
+    margin-right: 98px;
+}
+
+.H1-backButton-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    /* Version 2/t1 */
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 73.2px */
+}
+
+.back-button{
+    border: none;
+    background-color: rgb(246, 247, 248);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+
+.back-button:hover{
+    background: #EEEEEE;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.subtitel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    max-width: 1016px;
+    margin-top: 32px;
+}
+
+.subtitel{
+    align-self: stretch;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitel h2{
+    color: #000;
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 32.4px */
+}
+
+.subtitel span{
+    color: #000;
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+
+.ul-impressum{
+    list-style-type: disc;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 25px;
+}
+
+h3{
+    margin-block-end: 0em;
+}
+
+.subtitel-impressum-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 1016px;
+    margin-top: 32px;
+}
+
+.blue-element{
+    color: #29ABE2 !important;
+}
+
+.last-subtitel{
+    margin-bottom: 32px;
+}
+
+.ul-help{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    list-style-type: auto;
+    padding-inline-start: 0px;
+}
+
+.ul-help li{
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    align-self: stretch;
+}
+
+.counter{
+    color: var(--black, #000);
+    font-family: 'inter', 'regular', 'latin';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 32.4px */
+}
+
+.h3-wo-margin{
+    margin-top: 0px;
+}

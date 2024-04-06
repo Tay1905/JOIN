@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="../css/naviagtion-template.css">
+    <link rel="stylesheet" href="../css/media/navbarResponsive.css">
+    <script src="../js/navbar.js"></script>
+</head>
+
+<body onload="checkFocusNav()">
+
+
+    <div class="height-100">
+        <div class="summary">
+            <div class="navigation-logo">
+                <img src="../img/join-logo-white.png" alt="Join-Logo-white">
+            </div>
+
+            <nav id="navigation">
+                <div class="current-hoover" id="SummaryLinkDiv"><a id="SummaryLink" onclick="checkFocusNav()" href="../html/summary.html" target="_top"><img class="navbar-icon" src="../img/summary-icon.svg" alt=""><span>Summary</span></a></div>
+                <div class="current-hoover" id="AddTaskLinkDiv"><a id="AddTaskLink" onclick="checkFocusNav()" href="../html/addTask.html" target="_top"><img src="../img/addTask-icon.svg" alt=""><span>Add Task</span></a></div>
+                <div class="current-hoover" id="BoardLinkDiv"><a id="BoardLink" class="m-left" onclick="checkFocusNav()" href="../html/board.html" target="_top"><img src="../img/board-icon.svg" alt=""><span>Board</span></a></div>
+                <div class="current-hoover" id="ContactsLinkDiv"><a id="ContactsLink" onclick="checkFocusNav()" href="../html/contacts.html" target="_top"><img src="../img/contact-icon.svg" alt=""><span>Contacts</span></a></div>
+            </nav>
+
+        </div>
+
+
+        <div id="impressum">
+            <div id="PolicyLink"  class="impressum-div">
+                <a  href="../html/policy.html" target="_top">Privacy Policy</a>
+            </div>
+            <div id="LegalNoticeLink" class="impressum-div">
+                <a  href="../html/impressum.html" target="_top">Legal Notice</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

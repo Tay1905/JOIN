@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+}
+
+
+.addTaskPopup {
+    background-color: white;
+    border-radius: 16px;
+    position: absolute;
+    top: 30px;
+    left: 128px;
+    right: 128px;
+    z-index: 20;
+    overflow: auto;
+    height: 90%;
+}
+
+
+.maincontainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background-color: #F6F7F8;
+}
+
+
+.add_task_h1 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+
+.add_task_h1 img {
+    height: 30px;
+}
+
+
+.add_task_h1 img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.buttons-clear-create {
+    position: absolute;
+    bottom: 30px;
+    right: 200px;
+    display: flex;
+    justify-content: space-between;
+    max-height: 65px;
+}
+
+
+.create-btn {
+    border: none;
+}
+
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+
+.d-none {
+    display: none;
+}
+
+
+.d-block {
+    display: block;
+}
+

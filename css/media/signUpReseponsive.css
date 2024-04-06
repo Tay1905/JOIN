@@ -1,0 +1,43 @@
+@media(max-width: 1030px) {
+    .signup-subcontainer {
+        margin-top: 48px;
+        position: absolute;
+        right: 48px;
+        left: 48px;
+        padding: 25px 10%;
+        width: auto;
+    }
+
+    footer {
+        position: absolute;
+        bottom: -160px;
+        width: 95%;
+        padding-left: 0;
+    }
+
+    .signup-page-main-container {
+        height: 130vh;
+    }
+}
+
+@media(max-width: 500px) {
+    .headline-signup {
+        font-size: 48px;
+    }
+}
+
+@media(max-width: 425px) {
+    .headline-signup {
+        font-size: 35px;
+    }
+
+    .accept-policy-line {
+        flex-direction: column;
+    }
+
+    .signup-subcontainer {
+        left:0;
+        right: 0;
+    }
+}
+

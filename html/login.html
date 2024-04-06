@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="../img/join-logo.png">
+    <link rel="stylesheet" href="../css/styleAddTask.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/media/loginResponsive.css">
+    <script src="../js/register.js"></script>
+    <script src="../js/board.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/addTask.js"></script>
+    <script src="../js/login.js"></script>
+
+
+    <title>Join Login</title>
+</head>
+
+<body onload="createmsg()">
+    <div class="startcontainer"><img src="../img/Join-logo-lg.png" alt="start-logo"></div>
+    <div class="login-page-main-container">
+        <div class="logo-and-signup-line">
+            <img src="../img/join-logo.png" alt="logo" class="join-logo">
+        </div>
+
+        <div class="login-maincontainer">
+            <div class="login-subcontainer">
+                <span class="headline-login">Log in</span>
+                <div class="seperator-container">
+                    <div class="seperator-login"></div>
+                </div>
+                <div class="inputfields-login-container">
+                    <input class="inputfield-login" id="email" type="email" required placeholder="Email">
+                    <div class="warningtxt-user-not-found" id="user-not-found"></div>
+                    <input class="inputfield-login" onkeyup="bgImgEye()" id="password" type="password" required
+                        placeholder="Password" onclick="changeEye()">
+                    <div class="warningtxt-user-not-found" id="wrong-password"></div>
+                </div>
+                <div class="remember-forgot-line">
+                    <div class="remember-me">
+                        <img src="../img/checkbox.png" class="check-btn-login" alt="Checkbox" onclick="rememberMe()"
+                            id="remember-me-btn">
+                        <span>Remember me</span>
+                    </div>
+                </div>
+                <div class="btns-login">
+                    <button class="btn" onclick="checkLoginInputs()">Log in</button>
+                    <div class="btn btn-guest-login" onclick="guestLogin()">Guest Log in</div>
+                </div>
+            </div>
+        </div>
+        <div class="signup-container">
+            <span>Not a join user?</span>
+            <a href="../html/signUp.html">
+                <div class="btn">Sign up</div>
+            </a>
+        </div>
+
+        <footer>
+            <a href="../html/policy.html" target="_blank">Privacy Policy</a>
+            <a href="../html/impressum.html" target="_blank">Legal notice</a>
+        </footer>
+
+    </div>
+
+    <div id="msgBox"></div>
+
+</body>
+
+</html>

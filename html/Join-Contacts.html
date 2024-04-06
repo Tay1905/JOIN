@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="../img/join-logo.png">
+    <title>Join-Contacts</title>
+    <link rel="icon" type="image/gif" href="../img/join-logo.png">
+  
+    <link rel="stylesheet" href="../css/style-contacts.css">
+    <link rel="stylesheet" href="../JoinTayfun/freeSpace-template.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script src="../js/Join-script.js"></script>
+    <!-- <link rel="stylesheet" href="/css/styleAddTask.css"> -->
+   
+</head>
+
+<body onload="render()" >
+   
+
+    <section class="main-section">
+    
+        <div id="container1" class="container">
+            <iframe src="navigation-template.html" width="287px" height="100%" frameborder="0"></iframe>
+        </div>
+    
+        <section  id="container2">
+            <div class="contactList">
+            <a  id="addContact-button" onclick="showContactForm()"><b>Add new contact</b><img src="../img/contacts/person_add.png" alt="Hinzufügen"></a>
+            </div>
+    
+    
+            <div class="list-of-contacts" id="contact-list">
+            </div>
+    
+           
+    
+              
+        </section>
+    
+    
+    
+    
+    
+    
+    
+    <section id="numberForm" class="d-none">
+    
+        <div id="contactForm" class="contact-Form " >
+            <div class="darkArea"><img src="../img/contacts/Frame 194.png" alt=""></div>
+    
+            <img src="../img/contacts/Frame 79.png" height="150px" alt="">
+            
+                <div class="inputForm">
+                   <div class="x-button"><a id="x-button" onclick="closeContactForm()" href="#">X</a></div>
+    
+                   <form onsubmit="addNewContact()"></form>
+                   <div class="inputEmail">
+                    <input required minlength="8" type="text" placeholder="Name" id="nameOfContact" name="name">
+                    <img src="../img/person.png" alt="">
+                   </div>
+    
+                <div class="inputEmail">
+                <input type="email" placeholder="Email" required minlength="3" id="emailOfContact" name="email">
+                <img src="../img/mail.png" alt="">
+                </div>
+                
+                <div class="inputEmail">
+                <input type="tel" placeholder="Phone" required minlength="2" id="numberOfContact" name="telefonnummer">
+                <img src="../img/call.png"  alt="">   
+            </div>
+                </div>
+                <div class="button-flex">
+                <button id="closeContactForm" onclick="closeContactForm()">Cancel <b>X</b></button>
+                <button id="add-button" onclick="addNewContact()" >Create contact <img src="../img/check.png" alt=""></button>  
+            </form>
+                </div>
+                </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <section id="editForm"  class="d-none">
+    
+        <div  class="contact-Form ">
+            <div class="darkArea"><img src="../img/edit-Contact.png" alt=""></div>
+    <div class="contact-initials" id="contact-initials">
+            <img src="../img/Group 13.png"  alt="">
+         </div>   
+            
+                <div class="editForm" class="inputEmail">
+                    <div class="x-button"><a id="x-button" onclick="backEdit()">X</a></div>
+                
+                <div class="inputEmail">
+                <input type="text" required minlength="3" placeholder="Name" id="inputName" type="name"  name="name" >
+                <img src="../img/person.png" height="50px" alt="">
+                </div>
+    
+                <div  class="inputEmail">
+                <input type="email" required placeholder="Email" type="email" id="inputEmail"  name="email">
+                <img src="../img/mail.png" alt="">
+                </div>       
+    
+                <div  class="inputEmail"> 
+                <input type="tel" required placeholder="Phone" id="inputNumber" type="number" name="telefonnummer">
+                <img src="../img/call.png" alt="">
+                </div>    
+            
+            </div>
+    
+                <div class="button-flex">
+                <button id="delete-Button" onclick="deleteEditContact()">Delete</button>
+                <button onclick="editContact()" id="create-button">Save  <img src="../img/check.png"></button>  
+                <!-- <button onclick="deleteAllContacts()">DeleteAll <img src="../img/check.png"></button>   -->
+                </div>
+                </div>
+        </div>
+    
+    </section>
+    
+    
+    
+        <section id="container3">
+            <div class="content-headline">
+            <b>Contacts</b>
+            <div class="up-line"></div>
+            <div>
+            <span id="font-size">Better with a team</span>
+            </div>     
+        </div>
+    
+            
+            <div class="contact-contant d-none " id="contact-contant">
+               
+                <img src="../img/Group 13.png" alt="">
+                <div>
+                 <h1>Name Nachname</h1>
+                <div>
+                    <button onclick="editContact()">Edit</button>
+                    <button onclick="deleteContact()">Delete</button>
+                </div>
+                 <div>
+                <span>Contact Information</span>
+                </div>    
+            </div>
+            </div>
+            
+    
+    
+           
+            
+        </section>
+        <section class="free-space">
+        <!-- <iframe src="free-space-template.html" width="2000px" height="93px"></iframe> -->
+        <div >
+            <div w3-include-html="../html/header.html"></div>
+        </div>
+        <div><button class="d-none" id="responsive-person-add" onclick="showContactForm()"><img  src="../JoinTayfun/img/person_add.png" alt=""></button></div>
+    
+    
+        <div class="d-none" id="responsive-navigation">
+            <a href="../html/summary.html"><img src="../JoinTayfun/responsive-img/Summary-responsive.png" alt=""></a>
+            <a href="../html/board.html"><img src="../JoinTayfun/responsive-img/menuButton-responive.png" alt=""></a>
+            <a href="../html/addTask.html"><img src="../JoinTayfun/responsive-img/add task-responsive.png" alt=""></a>
+            <a href="../JoinTayfun/Join-Contacts.html"><img src="../JoinTayfun/responsive-img/contact-responsive.png" alt=""></a>
+        </div>
+    
+    
+    </section>
+    <div class="d-none" id="respsonsive-showContact"></div>
+    <div id="succes-button" class="d-none"><button class="succes-button">Contact succesfully created</button> </div>
+
+
+    <script src="/js/login.js"></script>
+    <script src="/js/register.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/addTask.js"></script>
+
+</body>
+
+</html>
